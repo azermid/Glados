@@ -1,0 +1,92 @@
+cabal-version:       2.2
+
+name:                glados
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/Shin-gema/glados#readme
+license:             BSD-3-Clause
+license-file:        LICENSE
+author:              Thomas
+maintainer:          thomas.janiaut@epitech.eu
+copyright:           2025 Thomas
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+                     CHANGELOG.md
+
+executable glados
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  other-modules:       Compiler.Compiler
+                      , Compiler.PreCompiler
+                      , MLL.Def
+                      , VM.Interpreter
+                      , Env
+                      , VM.Instruction
+                      , VM.Runtime
+                      , Args
+                      , Parser.MLL
+                      , Parser.Lib
+                      , Parser.Lang.En
+                      , Parser.Lang.Fr
+                      , Parser.Lang.Pt
+                      , Parser.Lang.Lib
+                      , Parser.Lang.MLLGlobal
+                      , Parser.Lang.Common
+                      , Parser.ErrorHandler
+                      , DebugVerbose
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                       , containers
+                       , text
+                        , bytestring
+                        , binary
+                        , brick
+                        , vty
+                        , microlens-mtl
+                        , microlens-th
+                        , microlens
+                        , text-zipper
+                       , split
+
+  ghc-options:         -Wall
+                       -Wcompat
+                       -Widentities
+                       -Wincomplete-record-updates
+                       -Wincomplete-uni-patterns
+                       -Wmissing-export-lists
+                       -Wmissing-home-modules
+                       -Wpartial-fields
+                       -Wredundant-constraints
+                       -threaded
+
+test-suite glados-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      tests
+                      ,src
+
+  main-is:             CompilerSpec.hs
+    
+  other-modules:       Compiler.Compiler
+                      , Parser.MLL
+                      , Parser.Lib
+                      , Parser.Lang.En
+                      , Parser.Lang.Fr
+                      , Parser.Lang.Pt
+                      , Parser.Lang.Lib
+                      , Parser.Lang.MLLGlobal
+                      , Parser.Lang.Common
+                      , MLL.Def
+                      , VM.Instruction
+                      , Env 
+                      , MLLGlobalSpec
+  
+  build-depends:       base >= 4.7 && < 5
+                       , hspec
+                       , containers
+                       , text
+                       , bytestring
+                       , binary
+  default-language:    Haskell2010
+  ghc-options:         -Wall
