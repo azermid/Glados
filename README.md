@@ -4,60 +4,54 @@
 
 # MLL Programming Language
 
-## 🌍 Choose your language
+**MLL** est un langage de programmation multilingue. Il offre un environnement simple, complet et pédagogique pour apprendre à programmer sans barrière de la langue.
 
-- [English](README.md)
-- [Français](README.fr.md)
-- [Português](README.pt)
+Vous voulez contribuer au projet ? N'hésitez pas à nous rejoindre sur ce dépôt. Nous sommes ouverts à toutes les contributions !
 
 
-**MLL** is a multilingual programming language. It offers a simple, comprehensive, and educational environment for learning to code without language barriers.
 
-Want to contribute to the project? Feel free to join us on this repository. We welcome all contributions!
+## Pourquoi choisir MLL ?
 
-
-## Why choose MLL?
-
-- 🌍 **Multilingual**: Code in the language of your choice.
-- 🎓 **Educational**: Perfect for beginners and educational settings.
-- 🛠️ **Simple and Comprehensive**: Provides all the necessary features to start coding right away.
+- 🌍 **Multilingue** : Programmez dans la langue de votre choix.
+- 🎓 **Pédagogique** : Parfait pour les débutants et les environnements éducatifs.
+- 🛠️ **Simple et Complet** : Fournit toutes les fonctionnalités nécessaires pour commencer à coder immédiatement.
 
 
-## Download the latest version
+## Téléchargement de la dernière version
 
-- **For Ubuntu/Debian/Arch Linux**  
-  [Download version 1.0.0](#)
-  
-- **For Windows**  
-  [Download version 1.0.0](#)
+- **Pour Ubuntu/Debian/Arch Linux**  
+  [Télécharger la version 1.0.0](#)
+
+- **Pour Windows**  
+  [Télécharger la version 1.0.0](#)
 
 
-## Quick Start
+## Démarrage rapide
 
 ```cassandraql
 int main() {
     int x = 0;
-    for (int i = 0; i < 10; i = i + 1) {
+    pour (int i = 0; i < 10; i = i + 1) {
         x = x + 1;
     }
-    return x;
+    returne x;
 }
 ```
 
-## How to contribute?
+## Comment contribuer ?
 
-We welcome all contributions, whether it's code, documentation, or ideas to improve the project. Here's how you can participate:
+Nous accueillons toutes les contributions, qu'il s'agisse de code, de documentation ou d'idées pour améliorer le projet. Voici comment vous pouvez participer :
 
-1. **Fork the repository** and clone it locally.
-2. Create a new branch for your changes:
+1. **Forkez le dépôt** et clonez-le localement.
+2. Créez une nouvelle branche pour vos modifications :
    ```bash
-   git checkout -b my-contribution
+   git checkout -b ma-contribution
    ```
-3. Make your changes, test them, and submit a Pull Request.  
-   For more details, check out our [CONTRIBUTING.md](./CONTRIBUTING.md) guide.
+3. Effectuez vos modifications, testez-les, puis soumettez une Pull Request.  
+   Pour plus d'informations, consultez notre guide [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ---
 
 ## License
 
-This project is licensed under the **MIT** license. See the [LICENSE](./LICENSE) file for details.
+Ce projet est sous licence **MIT**. Consultez le fichier [LICENSE](./LICENSE) pour plus de détails.
